@@ -6,3 +6,5 @@ Learn HTML, CSS, and JavaScript
 Build a music management system
 Learn Git and GitHub
 Eventually add AI-powered recommendations
+
+

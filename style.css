@@ -13,3 +13,36 @@
 .track-row { grid-template-columns: 44px minmax(160px, 1.5fr) minmax(80px, 1fr) 76px 52px 58px; }
 @media (max-width: 800px) { .track-row { grid-template-columns: 35px minmax(0, 1fr) 76px 52px 58px; } }
 
+/* Temporary green theme */
+:root { --ink: #163b2a; --muted: #6c8577; --blue: #16834b; --bright: #28a866; --pale: #edf9f1; --line: #d8eadf; --navy: #124d32; }
+body { background: #f6fbf7; }
+.sidebar { color: #d7f0df; }
+.brand-mark { color: var(--navy); background: #8cddb0; }
+.nav-link, .playlist-nav-item { color: #b9dec5; }
+.nav-icon { color: #83d0a0; }
+.sidebar-heading { color: #8bbca0; }
+.icon-button { color: #9be0b5; }
+.playlist-nav-item span { color: #76af8c; }
+.text-button { color: #a8d8b8; }
+.avatar { border-color: #b9dfc6; color: var(--blue); background: #e9f8ed; }
+.button { box-shadow: 0 7px 18px rgba(22, 131, 75, .18); }
+.button:hover { background: #0d6d3d; }
+.accent-stat { border-color: #2d9a61; background: linear-gradient(120deg, #16834b, #2cb36d); }
+.accent-stat .stat-label { color: #c8efd5; }
+.track-row:hover, .track-row.playing { background: #f0faf3; }
+.playlist-art { background: linear-gradient(140deg, #176a40, #70d59a); }
+.playlist-art small { color: #d8f4e2; }
+.small-button { border-color: #b7dcc3; }
+.small-button:hover { background: var(--blue); }
+.discover-banner { background: linear-gradient(110deg, #104d32, #20945a); }
+.discover-banner p { color: #c9efd5; }
+.banner-kicker { color: #8cddb0; }
+.banner-mark { color: #a5e7bd; }
+.player-bar { color: #d9f0df; background: #0d3825; box-shadow: 0 -5px 20px rgba(6, 67, 31, .12); }
+.cover-art { color: #0d4529; background: #90dcae; }
+.current-track span { color: #8dbba0; }
+.player-button { color: #a7dbb9; }
+.play-button { border-color: #86d5a4; }
+.progress-row, .volume-control { color: #89b89b; }
+.progress-row input, .volume-control input { accent-color: #71d59a; }
+
