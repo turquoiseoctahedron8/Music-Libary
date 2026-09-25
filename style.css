@@ -224,4 +224,21 @@ body { background: #fdfbfe; }
 .discover-banner { border: 1px solid #c5d4e9; }
 .search-wrap input { border-color: #c5d4e9; color: #23304a; background: rgba(255,255,255,.86); }
 .track-name { color: #23304a; }
+.export-panel { max-width: 720px; }
+.export-form { display: grid; gap: 10px; padding: 24px 20px 28px; }
+.export-form label { color: #536e9d; font-size: 12px; font-weight: 700; }
+.export-form label span { color: #8a98ac; font-weight: 400; }
+.export-form select, .export-form input[type="file"] { width: 100%; padding: 11px 12px; border: 1px solid #c5d4e9; border-radius: 4px; color: #23304a; background: rgba(255,255,255,.9); }
+.export-form select { appearance: auto; }
+.export-form .button { justify-self: start; margin-top: 8px; }
+.export-status { min-height: 18px; margin: 2px 0 0; color: #668cc4; font-size: 12px; }
+.secondary-button { color: #536e9d; border: 1px solid #aec3e2; background: rgba(255,255,255,.8); box-shadow: none; }
+.secondary-button:hover { color: #fff; background: #7198cf; }
+.archive-dialog { width: min(92vw, 520px); padding: 0; border: 1px solid #c5d4e9; border-radius: 8px; color: #23304a; background: #fff; box-shadow: 0 24px 80px rgba(35,48,74,.28); }
+.archive-dialog::backdrop { background: rgba(35,48,74,.42); }
+.archive-dialog-header { display: flex; align-items: start; justify-content: space-between; gap: 20px; padding: 22px 22px 0; }
+.archive-dialog-header h2 { margin: 0; font-size: 22px; }
+.archive-dialog-header .eyebrow { margin-bottom: 6px; }
+.dialog-close { border: 0; padding: 0 4px; color: #7187a7; background: transparent; font-size: 28px; line-height: 1; }
+.dialog-close:hover { color: #d6679d; }
 

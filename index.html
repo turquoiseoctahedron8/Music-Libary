@@ -7,7 +7,8 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css?v=pink-blue-2">
+   <link rel="stylesheet" href="style.css?v=pink-blue-3">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 </head>
 <body>
    <section id="lockScreen" class="lock-screen" aria-labelledby="lockTitle">
@@ -45,13 +46,13 @@
             <div class="stats-row"><div class="stat-card"><span class="stat-label">Tracks</span><strong id="trackCount">0</strong></div><div class="stat-card"><span class="stat-label">Playlists</span><strong id="playlistCount">0</strong></div><div class="stat-card accent-stat"><span class="stat-label">Now playing</span><strong id="nowPlayingStat">Nothing yet</strong></div></div>
             <div class="content-panel"><div class="panel-header"><div><h2 id="trackListTitle">All tracks</h2><p id="libraryHint">Add MP3 files to begin building your collection.</p></div><div class="search-wrap"><label for="searchInput">Search library</label><input id="searchInput" type="search" placeholder="Search tracks"></div></div><div id="songList" class="track-list"></div></div>
          </section>
-         <section id="playlistsView" class="view"><div class="page-heading"><div><p class="eyebrow">Organize your sound</p><h1>Playlists</h1><p class="subheading">Give your favorite combinations a name and a place.</p></div><button class="button primary-button" id="newPlaylistButtonMain">+ New playlist</button></div><div id="playlistGrid" class="playlist-grid"></div></section>
+         <section id="playlistsView" class="view"><div class="page-heading"><div><p class="eyebrow">Organize your sound</p><h1>Playlists</h1><p class="subheading">Give your favorite combinations a name and a place.</p></div><div class="heading-actions"><button class="button secondary-button" id="archiveButton" type="button">Import / Export</button><button class="button primary-button" id="newPlaylistButtonMain" type="button">+ New playlist</button></div></div><div id="playlistGrid" class="playlist-grid"></div><dialog id="archiveDialog" class="archive-dialog"><div class="archive-dialog-header"><div><p class="eyebrow">Portable playlists</p><h2>AstolfoNote files</h2></div><button id="closeArchiveButton" class="dialog-close" type="button" aria-label="Close">×</button></div><div class="export-form"><label for="exportPlaylistSelect">Playlist to export</label><select id="exportPlaylistSelect"></select><label for="exportIconInput">Custom playlist icon <span>(optional)</span></label><input id="exportIconInput" type="file" accept="image/png,image/jpeg,image/webp,image/gif"><button id="exportPlaylistButton" class="button" type="button">Export .astfnote</button><label for="importArchiveInput">Import an AstolfoNote file</label><input id="importArchiveInput" type="file" accept=".astfnote"><p id="exportStatus" class="export-status" role="status"></p></div></dialog></section>
          <section id="discoverView" class="view"><div class="page-heading"><div><p class="eyebrow">Shared by the community</p><h1>Discover</h1><p class="subheading">Publish your playlists and find new sounds from other listeners.</p></div><button class="button primary-button" id="publishButton">Publish a playlist</button></div><div class="discover-banner"><div><span class="banner-kicker">Your stage</span><h2>Share the feeling behind your music.</h2><p>Published playlists appear here for your community. Your MP3 files stay on your device unless you connect a cloud service later.</p></div><span class="banner-mark">BN</span></div><div id="publishedGrid" class="published-grid"></div></section>
       </main>
    </div>
    <footer class="player-bar"><div class="current-track"><div class="cover-art" id="playerArt">--</div><div><strong id="currentTitle">Nothing playing</strong><span id="currentMeta">Choose a track from your library</span></div></div><div class="player-controls"><div class="control-buttons"><button id="previousButton" class="player-button" title="Previous track">|&lt;</button><button id="playButton" class="play-button" title="Play or pause">Play</button><button id="nextButton" class="player-button" title="Next track">&gt;|</button><button id="loopButton" class="player-button loop-active" title="Loop playlist" aria-pressed="true">Loop</button></div><div class="progress-row"><span id="currentTime">0:00</span><input id="progressInput" type="range" min="0" max="100" value="0" aria-label="Track progress"><span id="duration">0:00</span></div></div><div class="volume-control"><label for="volumeInput">Volume</label><input id="volumeInput" type="range" min="0" max="1" step="0.01" value="0.8"></div></footer>
    <audio id="audioPlayer"></audio>
-   <script src="script.js?v=340075a"></script>
+   <script src="script.js?v=archive-import-1"></script>
 </body>
 </html>
 
