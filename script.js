@@ -7,7 +7,7 @@ let currentTrackId = null;
 let audioUrl = null;
 let unlockKey = null;
 
-const unlockConfig = { salt: "F0KURJxcdaau29ezn_IWFw", iv: "Pj47EN_Y7uMu_PAH", data: "_HwXRk1Ow_rSY_eVG3Q9JdBOchJJmm-ao58Ph554373w" };
+const unlockConfig = { salt: "QEdkJNxWHoRnoQtGaq_ePg", iv: "L2EGjS6VkkxQ368z", data: "lViFJkhgjfN-5tzQoqcj4bZLCp_qim-KGzOPsGikvL-5" };
 
 function decodeBase64Url(value) { const normalized = value.replace(/-/g, "+").replace(/_/g, "/"); return Uint8Array.from(atob(normalized.padEnd(Math.ceil(normalized.length / 4) * 4, "=")), (character) => character.charCodeAt(0)); }
 async function deriveUnlockKey(passphrases) { const material = new TextEncoder().encode(passphrases.join("\n")); const imported = await crypto.subtle.importKey("raw", material, "PBKDF2", false, ["deriveKey"]); return crypto.subtle.deriveKey({ name: "PBKDF2", salt: decodeBase64Url(unlockConfig.salt), iterations: 250000, hash: "SHA-256" }, imported, { name: "AES-GCM", length: 256 }, false, ["decrypt"]); }
