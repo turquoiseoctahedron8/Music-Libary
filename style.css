@@ -162,3 +162,50 @@ h1, h2 { color: #f2f5f7; text-shadow: none; }
 .unlock-button:hover { color: #07110b; background: #25ed70; }
 .unlock-message { color: #ff7b8a; }
 
+/* Final pink, white, and blue palette */
+:root { --ink: #23304a; --muted: #73819a; --blue: #7198cf; --bright: #e58ab5; --pale: #fff8fc; --line: #dbe3f0; --navy: #27324b; }
+body { color: var(--ink); background: #f7faff; }
+.app-shell { background: linear-gradient(135deg, rgba(255,248,252,.78), rgba(220,231,248,.68)), url('tuffwallpaer.jpeg') center / cover fixed; }
+.sidebar { background: rgba(39,50,75,.96); border-right: 1px solid #526887; color: #e4eaf4; }
+.brand { color: #fff; }
+.brand-mark { color: #27324b; background: #f3b3d0; }
+.nav-link, .playlist-nav-item { color: #c6d2e5; }
+.nav-link:hover, .nav-link.active, .playlist-nav-item:hover { color: #fff; background: #435674; }
+.nav-link.active { box-shadow: inset 3px 0 0 #f3b3d0; }
+.nav-icon { color: #9bbce9; }
+.sidebar-heading, .icon-button, .playlist-nav-item span, .text-button { color: #b7c4d8; }
+.status-dot { background: #f3b3d0; }
+.avatar { border-color: #a9bddb; color: #f3b3d0; background: #394b6b; }
+.main-content { background: rgba(255,255,255,.62); }
+.eyebrow, .banner-kicker { color: #d6679d; }
+h1, h2 { color: #23304a; }
+.button { color: #fff; background: #d6679d; box-shadow: 0 6px 16px rgba(214,103,157,.2); }
+.button:hover { background: #c45389; }
+.accent-stat { border-color: #c98aad; background: linear-gradient(135deg, #d68bb1, #789bd1); }
+.content-panel { border-top-color: #7198cf; background: rgba(255,255,255,.9); }
+.track-row:hover, .track-row.playing { background: #f3f6fb; }
+.track-play-indicator, .more-button, .small-button { color: #668cc4; }
+.playlist-card, .published-card { border-color: #d6deeb; background: rgba(255,255,255,.94); }
+.playlist-art { background: linear-gradient(145deg, #e9a8c7, #84a8dc); }
+.small-button { border-color: #aec3e2; }
+.small-button:hover { color: #fff; background: #7198cf; }
+.discover-banner { border-color: #aec3e2; background: linear-gradient(115deg, #536e9d, #c681aa); }
+.banner-kicker, .banner-mark { color: #ffe5f1; }
+.player-bar { color: #e5ebf4; border-top-color: #aec3e2; background: #27324b; }
+.cover-art { color: #27324b; background: #f3b3d0; }
+.player-button { color: #c3d0e3; }
+.play-button { color: #fff; background: #d6679d; }
+.progress-row, .volume-control { color: #c3d0e3; }
+.progress-row input, .volume-control input { accent-color: #f3b3d0; }
+.lock-screen { background: linear-gradient(135deg, #f8eaf2, #dce8f7); }
+.lock-card { border-color: #c5d2e5; color: #23304a; background: rgba(255,255,255,.96); }
+.lock-kicker { color: #d6679d; }
+.lock-card h1 { color: #23304a; }
+.lock-copy { color: #73819a; }
+.unlock-form label { color: #536e9d; }
+.unlock-form textarea { border-color: #b8c9e1; color: #23304a; background: #fbfdff; }
+.unlock-form textarea:focus { border-color: #d6679d; box-shadow: 0 0 0 2px rgba(214,103,157,.2); }
+.unlock-button { color: #fff; background: #d6679d; }
+.unlock-button:hover { color: #fff; background: #c45389; }
+.unlock-message { color: #c45389; }
+
