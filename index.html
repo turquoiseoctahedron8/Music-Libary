@@ -3,13 +3,30 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>BlueNote | Music Library</title>
+   <title>Kawaii Music Cave | BlueNote</title>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <section id="lockScreen" class="lock-screen" aria-labelledby="lockTitle">
+      <div class="lock-card">
+         <p class="lock-kicker">PRIVATE FREQUENCY</p>
+         <h1 id="lockTitle">Enter the three tiny keys</h1>
+         <p class="lock-copy">All three passphrases are required to open the music room.</p>
+         <form id="unlockForm" class="unlock-form">
+            <label for="passwordOne">First passphrase</label>
+            <textarea id="passwordOne" rows="2" autocomplete="off" required></textarea>
+            <label for="passwordTwo">Second passphrase</label>
+            <textarea id="passwordTwo" rows="2" autocomplete="off" required></textarea>
+            <label for="passwordThree">Third passphrase</label>
+            <textarea id="passwordThree" rows="2" autocomplete="off" required></textarea>
+            <button class="unlock-button" type="submit">Open the magical cave</button>
+            <p id="unlockMessage" class="unlock-message" role="status"></p>
+         </form>
+      </div>
+   </section>
    <div class="app-shell">
       <aside class="sidebar">
          <a class="brand" href="#library" aria-label="BlueNote home"><span class="brand-mark">B</span><span>BlueNote</span></a>

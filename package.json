@@ -1,0 +1,9 @@
+{
+  "name": "bluenote-protected",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "hash-password": "node -e \"const crypto=require('crypto'); const password=process.argv[1]; if (!password) throw new Error('Usage: npm run hash-password -- your-password'); const salt=crypto.randomBytes(16); crypto.scrypt(password,salt,64,(e,key)=>{if(e)throw e; console.log(salt.toString('base64url')+':'+key.toString('base64url'))})\""
+  }
+}

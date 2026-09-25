@@ -46,3 +46,55 @@ body { background: #f6fbf7; }
 .progress-row, .volume-control { color: #89b89b; }
 .progress-row input, .volume-control input { accent-color: #71d59a; }
 
+/* Deliberately unbearable temporary theme */
+:root { --ink: #3a214e; --muted: #80658f; --blue: #e56aa8; --bright: #b85cc9; --pale: #fff0f8; --line: #efd5e7; --navy: #5b3a78; }
+body { background: #ffd9ec; }
+.sidebar { background: #12002e; color: #00ff1e; border-right: 7px solid #ff5c00; }
+.brand { color: #ffff00; text-shadow: 3px 3px #ff00aa; }
+.brand-mark { color: #12002e; background: #00ff1e; border: 4px solid #ff00aa; }
+.nav-link, .playlist-nav-item { color: #00ffff; }
+.nav-link:hover, .nav-link.active, .playlist-nav-item:hover { color: #12002e; background: #ffff00; }
+.nav-icon, .sidebar-heading, .icon-button, .playlist-nav-item span, .text-button { color: #ff5c00; }
+.main-content { background: rgba(255,255,255,.82); }
+.topbar { border-bottom: 5px dashed #ff00aa; }
+.breadcrumbs, .storage-status, .subheading, .panel-header p, .search-wrap label, .stat-label, .playlist-card p, .published-card p { color: #4b006e; }
+.eyebrow, .banner-kicker { color: #ff00aa; text-shadow: 1px 1px #00ff1e; }
+h1, h2 { color: #12002e; text-shadow: 2px 2px #00ffff; }
+.button { color: #12002e; background: #00ff1e; border: 4px solid #ff00aa; box-shadow: 7px 7px 0 #ff5c00; }
+.button:hover { background: #ffff00; }
+.accent-stat { border: 5px solid #e56aa8; background: linear-gradient(135deg, #f59ac5, #c98bdd); }
+.content-panel, .stat-card, .playlist-card, .published-card { border: 4px solid #ff5c00; }
+.content-panel { border-top-color: #00ff1e; }
+.track-row { border-bottom: 3px dotted #ff00aa; }
+.track-row:hover, .track-row.playing { background: #ffff00; }
+.track-name, .track-play-indicator, .more-button, .small-button { color: #ff00aa; }
+.small-button { border: 3px solid #00ffff; background: #ffff00; }
+.small-button:hover { color: #ffff00; background: #12002e; }
+.playlist-art { background: linear-gradient(145deg, #f39bc7, #9d8bd8); }
+.discover-banner { border: 6px double #f3b3d5; background: linear-gradient(120deg, #6f4b8b, #d27cab); }
+.player-bar { color: #ffff00; background: #12002e; border-top: 7px solid #00ff1e; box-shadow: 0 -8px 0 #ff00aa; }
+.cover-art { color: #12002e; background: #ffff00; border: 4px solid #ff5c00; }
+.player-button { color: #00ffff; }
+.play-button { color: #12002e; border: 4px solid #ff00aa; background: #00ff1e; }
+.progress-row, .volume-control { color: #00ffff; }
+.progress-row input, .volume-control input { accent-color: #ff00aa; }
+
+/* Kawaii music-cave lock screen and wallpaper */
+body:not(.is-unlocked) .app-shell, body:not(.is-unlocked) .player-bar { display: none; }
+.lock-screen { min-height: 100vh; display: grid; place-items: center; padding: 26px; background: linear-gradient(135deg, #ffd6e9, #cdb9e8); }
+.is-unlocked .lock-screen { display: none; }
+.lock-card { width: min(100%, 560px); padding: 34px; border: 7px solid #ffff00; border-radius: 28px; color: #250041; background: rgba(255,255,255,.9); box-shadow: 14px 14px 0 #00ffff, -14px -14px 0 #ff00aa; transform: rotate(-1deg); }
+.lock-kicker { margin: 0 0 8px; color: #ff00aa; font: 700 12px 'Space Grotesk', sans-serif; letter-spacing: 2px; }
+.lock-card h1 { margin: 0; color: #250041; font: 700 clamp(30px, 7vw, 58px)/.95 'Space Grotesk', sans-serif; text-shadow: 4px 4px #00ffff; }
+.lock-copy { color: #6b197e; font-size: 14px; line-height: 1.5; }
+.unlock-form { display: grid; gap: 9px; }
+.unlock-form label { color: #ff00aa; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+.unlock-form textarea { width: 100%; resize: vertical; padding: 10px 12px; border: 4px solid #00ffff; border-radius: 10px; outline: 0; color: #250041; background: #ffffb3; font: 500 14px 'DM Sans', sans-serif; }
+.unlock-form textarea:focus { border-color: #ff00aa; box-shadow: 0 0 0 4px #00ff1e; }
+.unlock-button { margin-top: 10px; border: 5px solid #250041; border-radius: 12px; padding: 14px 18px; color: #250041; background: #00ff1e; font-weight: 700; box-shadow: 7px 7px 0 #ff5c00; }
+.unlock-button:hover { color: #fff; background: #ff00aa; }
+.unlock-message { min-height: 20px; margin: 7px 0 0; color: #ff00aa; font-size: 12px; font-weight: 700; }
+.app-shell { background: linear-gradient(135deg, rgba(255,217,236,.9), rgba(216,196,246,.82)), url('https://image.pollinations.ai/prompt/kawaii%202D%20anime%20pink%20blond%20androgynous%20knight%20with%20rabbit%20ears%20fantasy%20music%20wallpaper?width=1600&height=900&nologo=true') center / cover fixed; }
+.main-content { background: rgba(255,248,253,.78); backdrop-filter: blur(5px); }
+.player-bar { background: linear-gradient(90deg, rgba(91,58,120,.95), rgba(195,106,156,.86)), url('https://image.pollinations.ai/prompt/kawaii%202D%20anime%20pink%20blond%20androgynous%20knight%20with%20rabbit%20ears%20fantasy%20music%20wallpaper?width=1600&height=900&nologo=true') center 64% / cover; background-blend-mode: multiply; }
+
