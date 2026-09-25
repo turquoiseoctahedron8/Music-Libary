@@ -209,3 +209,19 @@ h1, h2 { color: #23304a; }
 .unlock-button:hover { color: #fff; background: #c45389; }
 .unlock-message { color: #c45389; }
 
+/* Light surface cleanup */
+body { background: #fdfbfe; }
+.app-shell { background: linear-gradient(135deg, rgba(255,248,252,.3), rgba(220,231,248,.22)), url('tuffwallpaer.jpeg') center / cover fixed; }
+.main-content { background: rgba(255,255,255,.24); }
+.stat-card { border: 1px solid #dbe3f0; background: rgba(255,255,255,.82); }
+.accent-stat { border: 1px solid #d9a6c2; background: linear-gradient(135deg, rgba(239,190,215,.92), rgba(168,193,230,.92)); }
+.content-panel { border: 1px solid #dbe3f0; border-top: 2px solid #b9cde9; background: rgba(255,255,255,.86); }
+.panel-header { border-bottom-color: #dbe3f0; }
+.track-row { border-bottom-color: #e8edf5; }
+.track-row:hover, .track-row.playing { background: rgba(246,244,251,.78); }
+.playlist-card, .published-card { border: 1px solid #dbe3f0; background: rgba(255,255,255,.86); }
+.wide { border: 1px dashed #b9cde9; background: rgba(255,255,255,.55); }
+.discover-banner { border: 1px solid #c5d4e9; }
+.search-wrap input { border-color: #c5d4e9; color: #23304a; background: rgba(255,255,255,.86); }
+.track-name { color: #23304a; }
+
