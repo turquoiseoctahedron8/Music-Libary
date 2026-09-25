@@ -98,3 +98,67 @@ body:not(.is-unlocked) .app-shell, body:not(.is-unlocked) .player-bar { display:
 .main-content { background: rgba(255,248,253,.1); backdrop-filter: blur(2px); }
 .player-bar { background: #5b3a78; }
 
+/* Steam x Spotify media dashboard theme */
+:root { --ink: #e8edf2; --muted: #9aa7b3; --blue: #66a7d9; --bright: #1ed760; --pale: #182127; --line: #34434d; --navy: #10181d; }
+body { color: var(--ink); background: #0e1519; }
+.app-shell { background: linear-gradient(135deg, rgba(9,16,21,.88), rgba(16,32,34,.76)), url('tuffwallpaer.jpeg') center / cover fixed; }
+.sidebar { background: rgba(12,20,25,.96); border-right: 1px solid #26343d; color: #c8d1d8; }
+.brand { color: #f4f7f9; text-shadow: none; }
+.brand-mark { color: #08110e; background: var(--bright); border: 0; border-radius: 5px; }
+.nav-link, .playlist-nav-item { color: #9eabb5; border-radius: 5px; }
+.nav-link:hover, .nav-link.active, .playlist-nav-item:hover { color: #fff; background: #20313a; }
+.nav-link.active { box-shadow: inset 3px 0 0 var(--bright); }
+.nav-icon { color: var(--blue); }
+.sidebar-heading, .icon-button, .playlist-nav-item span, .text-button { color: #7f909c; }
+.topbar { border-bottom: 1px solid rgba(149,170,182,.2); }
+.breadcrumbs { color: #82919c; }
+.breadcrumbs strong { color: #f0f4f6; }
+.status-dot { background: var(--bright); }
+.avatar { border-color: #526875; color: var(--bright); background: #1b2a31; }
+.main-content { background: rgba(12,20,25,.72); backdrop-filter: blur(9px); }
+.eyebrow, .banner-kicker { color: var(--bright); text-shadow: none; }
+h1, h2 { color: #f2f5f7; text-shadow: none; }
+.subheading, .panel-header p, .search-wrap label, .stat-label, .playlist-card p, .published-card p { color: var(--muted); }
+.button { color: #07110b; border: 0; border-radius: 4px; background: var(--bright); box-shadow: 0 6px 16px rgba(30,215,96,.2); }
+.button:hover { background: #25ed70; }
+.stat-card { border: 1px solid var(--line); border-radius: 5px; background: rgba(25,36,43,.88); }
+.accent-stat { border: 1px solid #267c51; background: linear-gradient(135deg, #173d32, #1d6947); }
+.accent-stat .stat-label { color: #a7d8b9; }
+.content-panel { border-top: 2px solid var(--bright); background: rgba(19,29,35,.92); }
+.panel-header { border-bottom-color: var(--line); }
+.search-wrap input { border-color: #42545f; border-radius: 4px; color: var(--ink); background: #111b20; }
+.search-wrap input:focus { border-color: var(--bright); }
+.track-row { border-bottom-color: rgba(128,151,163,.16); }
+.track-row:hover, .track-row.playing { background: rgba(43,68,77,.7); }
+.track-name { color: #eef3f5; }
+.track-play-indicator, .more-button, .small-button { color: var(--bright); }
+.track-file, .track-number { color: #82919c; }
+.playlist-card, .published-card { border: 1px solid var(--line); background: rgba(24,35,42,.94); }
+.playlist-art { background: linear-gradient(145deg, #224b5c, #1a7652); }
+.playlist-art small { color: #c8e7d3; }
+.small-button { border-color: #47705f; border-radius: 4px; background: transparent; }
+.small-button:hover { color: #09120d; background: var(--bright); }
+.wide { border-color: #48616e; background: rgba(20,31,37,.65); }
+.discover-banner { border: 1px solid #3f6d83; background: linear-gradient(115deg, #1e3442, #1b5948); }
+.discover-banner p { color: #c0ced5; }
+.banner-kicker, .banner-mark { color: #8fd9ae; }
+.player-bar { color: #c8d3d8; border-top: 1px solid #38515b; box-shadow: 0 -8px 24px rgba(0,0,0,.2); background: #101a20; }
+.cover-art { color: #08110e; border: 0; background: var(--bright); }
+.current-track span { color: #8da0ab; }
+.player-button { color: #9db0ba; }
+.play-button { color: #07110b; border: 0; background: var(--bright); }
+.play-button:hover, .loop-active { color: #fff; }
+.progress-row, .volume-control { color: #8497a2; }
+.progress-row input, .volume-control input { accent-color: var(--bright); }
+.lock-screen { background: linear-gradient(135deg, #10181d, #1b2931); }
+.lock-card { border: 1px solid #40525d; border-radius: 8px; color: var(--ink); background: rgba(20,30,36,.97); box-shadow: 0 22px 70px rgba(0,0,0,.45); transform: none; }
+.lock-kicker { color: var(--bright); }
+.lock-card h1 { color: #f2f5f7; text-shadow: none; }
+.lock-copy { color: var(--muted); }
+.unlock-form label { color: #9fb0ba; }
+.unlock-form textarea { border: 1px solid #40535f; border-radius: 4px; color: var(--ink); background: #111b20; }
+.unlock-form textarea:focus { border-color: var(--bright); box-shadow: 0 0 0 2px rgba(30,215,96,.2); }
+.unlock-button { border: 0; border-radius: 4px; color: #07110b; background: var(--bright); box-shadow: none; }
+.unlock-button:hover { color: #07110b; background: #25ed70; }
+.unlock-message { color: #ff7b8a; }
+
