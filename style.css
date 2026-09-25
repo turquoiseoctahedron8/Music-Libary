@@ -94,7 +94,7 @@ body:not(.is-unlocked) .app-shell, body:not(.is-unlocked) .player-bar { display:
 .unlock-button { margin-top: 10px; border: 5px solid #250041; border-radius: 12px; padding: 14px 18px; color: #250041; background: #00ff1e; font-weight: 700; box-shadow: 7px 7px 0 #ff5c00; }
 .unlock-button:hover { color: #fff; background: #ff00aa; }
 .unlock-message { min-height: 20px; margin: 7px 0 0; color: #ff00aa; font-size: 12px; font-weight: 700; }
-.app-shell { background: linear-gradient(135deg, rgba(255,217,236,.86), rgba(216,196,246,.7)), url('tuffwallpaer.jpeg') center / cover fixed; }
-.main-content { background: rgba(255,248,253,.2); backdrop-filter: blur(2px); }
+.app-shell { background: linear-gradient(135deg, rgba(255,217,236,.58), rgba(216,196,246,.42)), url('tuffwallpaer.jpeg') center / cover fixed; }
+.main-content { background: rgba(255,248,253,.1); backdrop-filter: blur(2px); }
 .player-bar { background: #5b3a78; }
 
